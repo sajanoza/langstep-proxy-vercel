@@ -8,6 +8,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'User-Agent': 'LangstepProxy/1.0 (+https://langstep.com)'
       },
       body: JSON.stringify(req.body),
     });
