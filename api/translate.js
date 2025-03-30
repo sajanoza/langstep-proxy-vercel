@@ -4,11 +4,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch('https://translate.argosopentech.com/translate', {
+    const response = await fetch('https://libretranslate.de/translate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'User-Agent': 'LangstepProxy/1.0 (+https://langstep.com)'
+        'User-Agent': 'LangstepProxy/1.0'
       },
       body: JSON.stringify(req.body),
     });
