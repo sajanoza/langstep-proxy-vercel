@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch('https://libretranslate.com/translate', {
+    const response = await fetch('https://translate.argosopentech.com/translate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
